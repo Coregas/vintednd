@@ -1,0 +1,10 @@
+require './namu_darbai.rb'
+require './main'
+  task :run do
+
+    Main.initialize(ARGV[1])
+
+  end
+task :test do
+  ruby 'tc_namu_darbai.rb'
+end
